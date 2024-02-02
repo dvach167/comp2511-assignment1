@@ -5,7 +5,9 @@
 
 body{
     font-family: 'Times New Roman', Times, serif;
-    max-width: 1500px;
+    max-width: 1600px;
+    overflow-x: hidden;
+    margin: auto;
 }
 
 .fontCalibri{
@@ -43,6 +45,7 @@ body{
 .currentLink {
     color: purple;
 }
+
 
 #topic1p::first-letter {
     font-size: 20px;
