@@ -47,7 +47,7 @@ body{
 }
 
 
-#topic1p::first-letter {
-    font-size: 20px;
+.topicparagraph ::first-letter {
+    font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
