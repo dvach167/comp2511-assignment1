@@ -23,3 +23,8 @@
 .navigationBar{
     text-align: right;
 }
+
+.currentLink {
+    color: #640200;
+    background-color: #000000;
+}
