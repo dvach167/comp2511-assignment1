@@ -1,0 +1,24 @@
+#mainHeader{
+}
+
+.divCenter{
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+
+}
+
+.companyLogo h3{
+    padding: 0;
+    margin: 0;
+    margin-right: 50px;
+}
+
+.navigation{
+    text-align: left;
+}
+
+.navigationBar{
+    text-align: right;
+}
