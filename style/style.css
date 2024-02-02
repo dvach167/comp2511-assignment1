@@ -1,4 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 1500px;
+}
+
+.fontCalibri{
+    font-family: 'Calibri', sans-serif;
+}
+
 #mainHeader{
+    margin-top: 25px;
 }
 
 .divCenter{
@@ -10,6 +25,7 @@
 }
 
 .navigation{
+    display: inline;
 }
 
 .companyLogo h3{
@@ -17,6 +33,7 @@
     margin: 0;
     margin-right: 50px;
     text-align: left;
+    display: inline;
 }
 
 .navigationBar{
