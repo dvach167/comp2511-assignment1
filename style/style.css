@@ -1,3 +1,4 @@
+/* Page body styles */
 *{
     margin: 0;
     padding: 0;
@@ -5,17 +6,15 @@
 
 body{
     font-family: 'Times New Roman', Times, serif;
-    max-width: 1600px;
+    max-width: 1280px;
     overflow-x: hidden;
     margin: auto;
 }
 
+/* Stuff to use generally*/
+
 .fontCalibri{
     font-family: 'Calibri', sans-serif;
-}
-
-#mainHeader{
-    margin-top: 25px;
 }
 
 .divCenter{
@@ -26,28 +25,92 @@ body{
 
 }
 
-.navigation{
-    display: inline;
+.textCenter{
+    text-align: center !important;
+}
+
+/* Header */
+#mainHeader{
+    margin-top: 25px;
+}
+
+.companyLogo {
+    display: flex;
+    align-items: center;
+}
+
+.companyLogo img {
+    margin-right: 5px;
 }
 
 .companyLogo h3{
-    padding: 0;
-    margin: 0;
-    margin-right: 50px;
+    margin: 0; 
     text-align: left;
-    display: inline;
+    
 }
 
-.navigationBar{
-    text-align: right;
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigationBar {
+    margin-left: auto;
 }
 
 .currentLink {
     color: purple;
+    pointer-events: none;
+}
+
+/* Home page content */
+
+.welcomingSction{
+
+}
+
+/* Information page style */
+.topicparagraph::first-letter {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
-.topicparagraph ::first-letter {
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+/* Screen compatibility */
+/* For screens with width less than 1300px */
+@media  screen and (max-width: 1300px){
+    body{
+        max-width: 90%;
+    }
+
+    .divCenter{
+        width: 100%;
+    }
+    
+}
+
+/* For screens with width less than 475px */
+@media  screen and (max-width: 475px){
+    .divCenter{
+        width: 100%;
+    }
+
+    .navigationBar{
+        text-align: left;
+    }
+
+    .navigation{
+        display: block;
+    }
+
+    .navigation h3{
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .navigation{
+        margin-bottom: 20px;
+    }
+    
 }
