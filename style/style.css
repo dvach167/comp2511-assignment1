@@ -7,6 +7,7 @@
 body{
     font-family: 'Times New Roman', Times, serif;
     max-width: 1280px;
+    max-width: 1280px;
     overflow-x: hidden;
     margin: auto;
 }
@@ -70,8 +71,7 @@ body{
 
 }
 
-/* Information page style */
-.topicparagraph::first-letter {
+.topicparagraph ::first-letter {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
