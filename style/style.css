@@ -218,7 +218,7 @@ body{
 /* Screen compatibility */
 /* For screens with width less than 1300px */
 @media  screen and (max-width: 1300px){
-    body{
+    .pageWidth{
         max-width: 90%;
     }
 
