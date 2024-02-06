@@ -16,9 +16,6 @@ body{
 .textBoxRounded{
     border-radius: 15px 50px 30px 5px;
     background: #73AD21;
-    padding: 20px;
-    width: 200px;
-    height: 150px;
     background-image: url("paper.gif")
 }
 
@@ -41,6 +38,7 @@ body{
     background-color: #F1F1F1;
     text-align: center;
     padding: 10px;
+    margin: bottom;
   }
 
 /* Header */
@@ -96,9 +94,9 @@ body{
     
 }
 
-/* Informatio page content */
+/* Information page content */
 
-.topicparagraph::first-letter {
+.topicparagraph1::first-letter {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -111,13 +109,30 @@ body{
     margin: auto;
 }
 
-.topicparagraph {
+.topicparagraph1 {
     border-radius: 15px 50px 30px;
     background: #81C3FF;
-    padding: 25px;
+    padding: 20px;
     width: 350px;
-    height: 425px;
+    height: auto;
     margin: auto;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.topicparagraph2 {
+    border-radius: 15px 50px 30px;
+    background: #81C3FF;
+    padding: 20px;
+    width: 350px;
+    height: auto;
+    margin: auto;
+    float: bottom;
+    box-sizing: border-box;
+}
+
+.topictitle{
+    text-align: center;
 }
 
 .column {
@@ -125,6 +140,10 @@ body{
     width: 40%;
 }
 
+.columnMiddle {
+    float: right;
+    width: 40%;
+}
 .column.side {
     width: 25%;
 }
