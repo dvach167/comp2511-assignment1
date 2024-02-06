@@ -162,32 +162,44 @@ body{
 
 .topicparagraph1 {
     border-radius: 15px 50px 30px;
-    background: #81C3FF;
+    background: rgb(134, 180, 248);
     padding: 20px;
     width: 400px;
     height: 475px;
     margin: auto;
-    position: absolute;
     box-sizing: border-box;
+    color: whitesmoke;
 }
 
 .topicparagraph2 {
     border-radius: 15px 50px 30px;
-    background: #81C3FF;
+    background: rgb(134, 180, 248);
     padding: 20px;
     width: 400px;
     height: 450px;
     margin: auto;
     box-sizing: border-box;
+    color: whitesmoke;
 }
 
 .helpBackground {
     background-color: lightgrey;
 }
 
-.topictitle{
-    padding: 20px;
+.topictitle1{
     text-align: center;
+    padding: 20px;
+    width: 400px;
+    height: auto;
+    margin: auto;
+}
+
+.topictitle2{
+    text-align: center;
+    padding: 20px;
+    width: 400px;
+    height: auto;
+    margin: auto;
 }
 
 .column {
@@ -198,9 +210,6 @@ body{
 .columnMiddle {
     float: right;
     width: 40%;
-}
-.column.side {
-    width: 25%;
 }
 
 .backgroundInfo {
@@ -217,7 +226,9 @@ body{
     clear: both;
     padding: 10px;
 }
-
+.row {
+    background-color: lightgrey;
+}
 /* Contact us page content*/
 
 /* Screen compatibility */
