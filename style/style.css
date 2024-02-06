@@ -6,12 +6,15 @@
 
 body{
     font-family: 'Times New Roman', Times, serif;
-    max-width: 1280px;
-    overflow-x: hidden;
-    margin: auto;
 }
 
 /* Stuff to use generally*/
+
+.pageWidth{
+    max-width: 1280px !important;
+    overflow-x: hidden !important;
+    margin: auto !important;
+}
 
 .textBoxRounded{
     border-radius: 15px 50px 30px 5px;
@@ -45,12 +48,13 @@ body{
 
 /* Header */
 #mainHeader{
-    margin-top: 25px;
+    margin: 30px 0 !important;
 }
 
 .companyLogo {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .companyLogo img {
@@ -58,9 +62,15 @@ body{
 }
 
 .companyLogo h3{
-    margin: 0; 
-    text-align: left;
+    color: rgba(0, 18, 184, 0.724);
+    font-weight: bold;
+    text-shadow: 0 0 1px gray;
+    margin: 0 3px;
     
+}
+
+.companyLogo h3:hover{
+    color: rgba(212, 2, 2, 0.729);
 }
 
 .navigation {
@@ -73,15 +83,28 @@ body{
     margin-left: auto;
 }
 
+.navigationBar a{
+    font-size: 1.085em;
+    color: rgba(0, 18, 184, 0.724);
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 1px gray;
+    margin: 0 3px;
+}
+
+.navigationBar a:hover{
+    color: rgba(212, 2, 2, 0.729);
+}
+
 .currentLink {
-    color: purple;
+    color: rgb(73, 145, 253) !important;
     pointer-events: none;
 }
 
 /* Home page content */
 
 #welcomingSction{
-    padding-top: 25%;
+    padding-top: 22%;
     text-align: center;
 }
 
@@ -96,7 +119,35 @@ body{
     
 }
 
-/* Informatio page content */
+#bodySeporator{
+    background-color: rgb(134, 180, 248);
+    padding: 24px 0;
+}
+
+.aboutRooms{
+    
+}
+
+.aboutRooms img{
+    margin: 0 22px;
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-item {
+    padding: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+/* Information page content */
 
 .topicparagraph::first-letter {
     font-size: 25px;
@@ -142,6 +193,8 @@ body{
     display: table;
     clear: both;
 }
+
+/* Contact us page content*/
 
 /* Screen compatibility */
 /* For screens with width less than 1300px */
