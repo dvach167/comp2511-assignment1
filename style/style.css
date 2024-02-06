@@ -155,7 +155,7 @@ body{
 .titleInfo {
     text-align: center;
     padding: 10px;
-    width: 300px;
+    width: 400px;
     height: 30px;
     margin: auto;
 }
@@ -164,8 +164,8 @@ body{
     border-radius: 15px 50px 30px;
     background: #81C3FF;
     padding: 20px;
-    width: 350px;
-    height: auto;
+    width: 400px;
+    height: 475px;
     margin: auto;
     position: absolute;
     box-sizing: border-box;
@@ -175,14 +175,18 @@ body{
     border-radius: 15px 50px 30px;
     background: #81C3FF;
     padding: 20px;
-    width: 350px;
-    height: auto;
+    width: 400px;
+    height: 450px;
     margin: auto;
-    float: bottom;
     box-sizing: border-box;
 }
 
+.helpBackground {
+    background-color: lightgrey;
+}
+
 .topictitle{
+    padding: 20px;
     text-align: center;
 }
 
@@ -211,6 +215,7 @@ body{
     content: "";
     display: table;
     clear: both;
+    padding: 10px;
 }
 
 /* Contact us page content*/
