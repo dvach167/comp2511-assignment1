@@ -11,6 +11,7 @@ body{
 /* Stuff to use generally*/
 
 .pageWidth{
+    padding: 2% 0;;
     max-width: 1280px !important;
     overflow-x: hidden !important;
     margin: auto !important;
@@ -40,8 +41,8 @@ body{
   }
 
 /* Header */
-#mainHeader{
-    margin: 30px 0 !important;
+.backgroundColorHome{
+    background-color: lightgray;
 }
 
 .companyLogo {
