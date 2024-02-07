@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Monaco', monospace;
 }
 
 /* Stuff to use generally*/
@@ -152,6 +152,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+ul.a {
+    list-style-type: circle;
+  }
+
 .titleInfo {
     text-align: center;
     padding: 10px;
@@ -160,12 +164,16 @@ body{
     margin: auto;
 }
 
+.alignLeft {
+    text-align: left;
+}
+
 .topicparagraph1 {
     border-radius: 15px 50px 30px;
     background: rgb(134, 180, 248);
     padding: 20px;
     width: 400px;
-    height: 475px;
+    height: 625px;
     margin: auto;
     box-sizing: border-box;
     color: whitesmoke;
@@ -176,7 +184,7 @@ body{
     background: rgb(134, 180, 248);
     padding: 20px;
     width: 400px;
-    height: 450px;
+    height: 625px;
     margin: auto;
     box-sizing: border-box;
     color: whitesmoke;
