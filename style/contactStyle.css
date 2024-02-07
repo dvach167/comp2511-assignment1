@@ -1,1 +1,8 @@
 /* Contact Page CSS */
+
+.centeringtext{
+    text-align: center !important;
+}
+body{
+    font-family: 'Monaco', monospace;
+}
