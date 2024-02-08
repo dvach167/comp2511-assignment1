@@ -11,7 +11,7 @@ body{
 /* Stuff to use generally*/
 
 .pageWidth{
-    padding: 2% 0;;
+    padding: 2% 0;
     max-width: 1280px !important;
     overflow-x: hidden !important;
     margin: auto !important;
@@ -36,7 +36,6 @@ body{
 .footer {
     background-color: #F1F1F1;
     text-align: center;
-    padding: 10px;
     margin: bottom;
   }
 
@@ -118,9 +117,11 @@ body{
     padding: 24px 0;
 }
 
-.aboutRooms img{
-    margin: 0 22px;
-    border-radius: 10px;
+.flex-item {
+    padding: 5px;
+    margin: 0.5% 0;
+    font-weight: bold;
+    font-size: 2em;
 }
 
 .container{
@@ -130,12 +131,37 @@ body{
     align-items: center;
 }
 
-.flex-item {
-    padding: 5px;
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 2em;
-  }
+.aboutRooms{
+    padding: 0 !important;
+}
+
+.helpRooms{
+    background-color: rgb(226, 28, 28);
+    color: white;
+}
+
+.aboutRooms img{
+    margin-left: 12%;
+    margin-right: 4%;
+    border-radius: 10px;
+}
+
+.reviewsDiv{
+    background-color: rgb(134, 180, 248);
+    color: white;
+}
+
+.reviewsDiv table{
+    margin-left: 12%;
+    margin-right: 4%;
+    background-color: rgb(65, 65, 65);
+    border: 4px solid black;
+    border-radius: 7px;
+}
+
+.reviewsDiv table tr{
+    
+}
 
 
 .background {
