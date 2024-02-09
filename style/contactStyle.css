@@ -1,11 +1,12 @@
 /* Contact Page CSS */
+body{
+    font-family: 'Monaco', monospace;
+}
 
 .centeringtext{
     text-align: center !important;
 }
-body{
-    font-family: 'Monaco', monospace;
-}
+
 .column {
     float: left;
     width: 40%;
@@ -22,4 +23,11 @@ body{
 }
 .Backgroundcolor {
     background-color: lightgrey;
+}
+.contactmethod1{
+    text-align: center;
+    padding: 20px;
+    width: 400px;
+    height: auto;
+    margin: auto;
 }
