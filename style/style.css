@@ -16,6 +16,11 @@ body{
     margin: auto !important;
 }
 
+.background {
+    background-image: url("/style/img/backgroundInfo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .fontCalibri{
     font-family: 'Calibri', sans-serif;
@@ -39,8 +44,8 @@ body{
 }
 
 /* Header */
-.backgroundColorHome{
-    background-color: lightgray;
+#mainHeader{
+    padding: 2% 0;
 }
 
 .companyLogo {
@@ -101,7 +106,7 @@ body{
 }
 
 .underStudentsImage{
-    width: 25%;
+    width: 20%;
     border-radius: 180px;
 }
 
@@ -111,11 +116,13 @@ body{
     
 }
 
+/* About us seperator */
 #bodySeporator{
     background-color: rgb(134, 180, 248);
     padding: 24px 0;
 }
 
+/* About us page content */
 .container{
     display: flex;
     flex-direction: row;
@@ -151,6 +158,7 @@ table.flex-item {
     border-radius: 10px;
 }
 
+/* Reviews page content */
 .reviewsDiv{
     background-color: rgb(134, 180, 248);
     color: white;
@@ -186,11 +194,7 @@ table.flex-item {
 }
 
 
-.background {
-    background-image: url("/style/img/backgroundInfo.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 
 
 /* Contact us page content*/
