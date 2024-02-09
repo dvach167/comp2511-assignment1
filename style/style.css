@@ -120,6 +120,8 @@ body{
 #bodySeporator{
     background-color: rgb(134, 180, 248);
     padding: 24px 0;
+    color: white;
+    text-shadow:  2px 0 1px black;
 }
 
 /* About us page content */
@@ -178,7 +180,7 @@ body{
 }
 
 .reviewsDiv p{
-    margin-left: 12%;
+    margin-left: 7%;
     margin-right: 4%;
 }
 
