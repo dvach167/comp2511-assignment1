@@ -137,10 +137,6 @@ body{
     text-shadow:  2px 0 2px black;
 }
 
-table.flex-item {
-    margin: 7% 0;
-}
-
 .aboutRooms{
     padding: 0 !important;
 }
@@ -171,6 +167,10 @@ table.flex-item {
     margin-right: 4%;
 }
 
+table.flex-item {
+    margin: 7% 0;
+}
+
 .reviewsDiv table{
     border: 4px solid black;
     border-radius: 7px;
@@ -192,12 +192,6 @@ table.flex-item {
 .reviewsDiv table tr:nth-child(even) {
     background-color: rgb(65, 65, 65);
 }
-
-
-
-
-
-/* Contact us page content*/
 
 /* Screen compatibility */
 /* For screens with width less than 1300px */
