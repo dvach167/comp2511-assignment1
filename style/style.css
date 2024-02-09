@@ -117,13 +117,7 @@ body{
     padding: 24px 0;
 }
 
-.flex-item {
-    margin: 1% 0;
-    font-weight: bold;
-    font-size: 2em;
-    text-shadow:  2px 0 2px black;
-}
-
+/* Body content stuff */
 .container{
     display: flex;
     flex-direction: row;
@@ -131,6 +125,14 @@ body{
     align-items: center;
 }
 
+.flex-item {
+    margin: 1% 0;
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow:  2px 0 2px black;
+}
+
+/* About the rooms part*/
 .aboutRooms{
     padding: 0 !important;
 }
@@ -148,6 +150,7 @@ body{
     border-radius: 10px;
 }
 
+/* Reviews part*/
 .reviewsDiv{
     background-color: rgb(134, 180, 248);
     color: white;
@@ -178,9 +181,6 @@ body{
     background-repeat: no-repeat;
 }
 
-
-/* Contact us page content*/
-
 /* Screen compatibility */
 /* For screens with width less than 1300px */
 @media  screen and (max-width: 1300px){
@@ -195,7 +195,7 @@ body{
 }
 
 /* For screens with width less than 475px */
-@media  screen and (max-width: 475px){
+@media  screen and (max-width: 610px){
     .divCenter{
         width: 100%;
     }
@@ -216,5 +216,16 @@ body{
     .navigation{
         margin-bottom: 20px;
     }
+
+    .container{
+        display: inherit;
+        align-items: center;
+    }
     
+    .flex-item {
+        margin: 0 18% !important;
+        font-size: 1.5em;
+        text-shadow:  2px 0 2px black;
+    }
+
 }
