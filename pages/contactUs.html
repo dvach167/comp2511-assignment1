@@ -33,11 +33,22 @@
             <<body>
                 <form id="formTwo" method="post" action="mailto:aalta082@mtroyal.ca" >
                     <fieldset>
-                        <label>Comments*<br />
+                        <label>Comments*</label>
+                            <br><br/>
                             <textarea name="comment" placeholder="Please type your concerns here."  required rows="5" cols="40" maxlength="250"></textarea>
                         </label>
-                        <br/>
+                        <br><br/>
                         <input type="hidden" name="secretValue" value="1234">
+                        <label>Email*
+                        <br><br/>
+                        <input type="text" name="email" required size="30" placeholder="name@mtroyal.ca" maxlength="30"/>
+                        </label>   
+                        <br><br/>
+                    <label>Phone (Optional)
+                    <br><br/>
+                    <input type="tel" size="30" name="phone"  maxlength="12" placeholder="123-456-7890" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}"/>
+                    </label>
+                    <br><br/>
                     </fieldset>
                         <legend></legend>
         </div>  
