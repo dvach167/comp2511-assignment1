@@ -1,11 +1,12 @@
 /* Contact Page CSS */
+body{
+    font-family: 'Monaco', monospace;
+}
 
 .centeringtext{
     text-align: center !important;
 }
-body{
-    font-family: 'Monaco', monospace;
-}
+
 .column {
     float: left;
     width: 40%;
