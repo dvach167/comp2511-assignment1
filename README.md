@@ -1,6 +1,6 @@
 # comp2511-assignment1
 
-Group Members : Dominik Vachon - Ghassan - Akram
+Group Members : Dominik Vachon - Ghassan Alnajjar - Akram Altabba
 
 Group Tasks
 
