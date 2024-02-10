@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/contactStyle.css">
 </head>
+
 <body class="background">
     <header id="mainHeader">
         <div class="navigation pageWidth">
@@ -22,78 +24,84 @@
                 <a href="/pages/contactUs.html" class="currentLink">Contact us</a>
             </nav>
         </div>
-    </header>   
-    
+    </header>
+
     <div id="body" class="centeringtext backgroundheader2">
         <h1>Contact us</h1>
     </div>
     <main class="pageWidth">
-        
+
         <div class=Backgroundcolor>
-            <<body>
-                <form id="formTwo" method="post" action="mailto:aalta082@mtroyal.ca" >
-                    <fieldset>
+            <div class="divCenter textCenter forms-color">
+                <form id="formTwo" method="POST" action="mailto:aalta082@mtroyal.ca">
+                    <fieldset class="text-color">
                         <label>Comments*</label>
-                            <br><br/>
-                            <textarea name="comment" placeholder="Please type your concerns here."  required rows="5" cols="40" maxlength="250"></textarea>
+                        <br><br />
+                        <textarea name="comment" placeholder="Please type your concerns here." required rows="5"
+                            cols="40" maxlength="250"></textarea>
                         </label>
-                        <br><br/>
+                        <br><br />
                         <input type="hidden" name="secretValue" value="1234">
                         <label>Email*
+                            <br><br />
+                            <input type="text" name="email" required size="30" placeholder="name@mtroyal.ca"
+                                maxlength="30" />
+                        </label>
+                        <br><br />
+                        <label>Phone (Optional)
+                            <br><br />
+                            <input type="tel" size="30" name="phone" maxlength="12" placeholder="123-456-7890"
+                                pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" />
+                        </label>
                         <br><br/>
-                        <input type="text" name="email" required size="30" placeholder="name@mtroyal.ca" maxlength="30"/>
-                        </label>   
-                        <br><br/>
-                    <label>Phone (Optional)
-                    <br><br/>
-                    <input type="tel" size="30" name="phone"  maxlength="12" placeholder="123-456-7890" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}"/>
-                    </label>
-                    <br><br/>
-                    <label>Emergency?</label>
-                    <br><br/>
-                    <label>Yes
-                    <input id="yes" type="radio" name="emergency_ans" value="yes">
-                    </label>
-                    <label>No
-                    <input id="two" type="radio" name="emergency_ans" value="no">
-                     </label>
-                    <br/><br/>
-                    <label>Prefered method of contact:</label>
-                    <br/>
-                    <label>
-                    Email
-                    <input type="checkbox" name="phone_and_Email[]" value="email"/>
-                    </label>
-                    <label>
-                    Phone
-                    <input type="checkbox" name="phone_and_Email[]" value="phone"/>
-                    </label>
-                    <br/><br/>
-                    <label>Date:
-                    <br><br/>
-                        
-                    <input type="date" name="date">
-                    <br><br/>
-                    </label>
-                    <input type="reset" value="Clear">
-                    <br/><br/>
+                        <label>Emergency?</label>
+                        <br><br />
+                        <label>Yes
+                            <input id="yes" type="radio" name="emergency_ans" value="yes">
+                        </label>
+                        <label>No
+                            <input id="two" type="radio" name="emergency_ans" value="no">
+                        </label>
+                        <br /><br />
+                        <label>Prefered method(s) of contact:</label>
+                        <br />
+                        <label>
+                            Email
+                            <input type="checkbox" name="phone_and_Email[]" value="email" />
+                        </label>
+                        <label>
+                            Phone
+                            <input type="checkbox" name="phone_and_Email[]" value="phone" />
+                        </label>
+                        <br /><br />
+                        <label>Date:
+                            <br><br />
+
+                            <input type="date" name="date">
+                            <br><br />
+                        </label>
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Clear">
+                        <br /><br />
                     </fieldset>
-                        <legend></legend>
-        </div>  
+                    <legend></legend>
+        </div>
     </main>
     <footer class="footer pageWidth">
         <p>
             The Students Path
         </p>
         <p>
-            Founders: Domink Vachon - Ghassan Alnajjar - Akram Altabba 
+            Founders: Domink Vachon - Ghassan Alnajjar - Akram Altabba
         </p>
         <p class="alignLeft">
             &copy; The Student Path, 2024
         </p>
     </footer>
 </body>
+
 </html>
 
 </body>
+
 </html>
