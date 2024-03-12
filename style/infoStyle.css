@@ -1,5 +1,18 @@
 /* Information Page CSS StyleSheet*/
 
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.topicpara {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 700px;
+}
+
 #helpPara {
    text-align: center;
    padding-left: 20px;
@@ -8,18 +21,9 @@
 
 figcaption {
     font-size: small;
-    float: right;
-    position: absolute;
-    bottom: -10px;
-    left: 593px;
 }
 
-img {
-    float: right;
-    position: absolute;
-    bottom: 10px;
-    left: 593px;
-}
+
 
 .topicparagraph1::first-letter {
     font-size: 25px;
@@ -40,6 +44,9 @@ img {
 }
 
 .topicparagraph1 {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1;
     border-radius: 15px 50px 30px;
     background: rgb(134, 180, 248);
     padding: 30px;
@@ -49,6 +56,12 @@ img {
     box-sizing: border-box;
     color: whitesmoke;
     
+}
+
+#topic2p {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1;
 }
 
 .topicparagraph2 {
@@ -67,7 +80,10 @@ img {
 }
 
 .topictitle1{
-    text-align: center;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1;
+    
     padding: 20px;
     width: 400px;
     height: auto;
@@ -75,6 +91,9 @@ img {
 }
 
 .topictitle2{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1;
     text-align: center;
     padding: 20px;
     width: 400px;
