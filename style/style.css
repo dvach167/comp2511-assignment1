@@ -139,56 +139,64 @@ body{
     text-shadow:  2px 0 2px black;
 }
 
-.flex-item {
-    margin: 1% 0;
-    font-weight: bold;
-    font-size: 2em;
-    text-shadow:  2px 0 2px black;
-}
-
-.flex-item {
-    margin: 1% 0;
-    font-weight: bold;
-    font-size: 2em;
-    text-shadow:  2px 0 2px black;
-}
-
 /* About the rooms part*/
-.aboutRooms{
-    padding: 0 !important;
+#mainBodyContent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .helpRooms{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     background-color: rgb(226, 28, 28);
     color: white;
     box-shadow:inset 0 5px 100px rgba(80, 80, 80, 0.8);
 }
 
-.aboutRooms img{
-    margin-left: 12%;
-    margin-right: 4%;
+.helpRooms img{
+    grid-column: 1 / 2;
+    margin: 5%;
     border: 4px solid black;
     border-radius: 10px;
 }
 
+.helpRooms p{
+    grid-column: 2 / 3;
+    margin-left: 7%;
+    margin-right: 4%;
+    font-size: 1.7em;
+    font-weight: bold;
+    text-shadow: 0 0 3px rgb(56, 56, 56);
+}
+
 /* Reviews page content */
-.reviewsDiv{
+#reviews{
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
     background-color: rgb(134, 180, 248);
     color: white;
     box-shadow:inset 0 5px 22px rgba(80, 80, 80, 0.8);
-
+    
+}
+.reviewsDiv{
+    margin: 5% 0 ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
 }
 
 .reviewsDiv p{
+    grid-column: 1 / 2;
     margin-left: 7%;
     margin-right: 4%;
 }
 
-table.flex-item {
-    margin: 7% 0;
-}
-
 .reviewsDiv table{
+    grid-column: 2 / 3;
     border: 4px solid black;
     border-radius: 7px;
 }
