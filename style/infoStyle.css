@@ -1,129 +1,137 @@
-/* Information Page CSS StyleSheet*/
+/*Main CSS for the information page*/
 
-
-article {
+.mainTopic {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.topicpara {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 700px;
-}
-
-#helpPara {
-   text-align: center;
-   padding-left: 20px;
-   padding-right: 20px;
-}
-
-figcaption {
-    font-size: small;
-}
-
-
-
-.topicparagraph1::first-letter {
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.a {
-    list-style-type: circle;
-    margin: 30px;
-  }
-
-.titleInfo {
-    text-align: center;
-    padding: 10px;
-    width: 400px;
-    height: 30px;
-    margin: auto;
-}
-
-.topicparagraph1 {
-    display: grid;
-    grid-column: 1/2;
-    grid-row: 1;
-    border-radius: 15px 50px 30px;
-    background: rgb(134, 180, 248);
-    padding: 30px;
-    width: 400px;
-    height: 675px;
-    margin: auto;
-    box-sizing: border-box;
-    color: whitesmoke;
-    
-}
-
-#topic2p {
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 1;
-}
-
-.topicparagraph2 {
-    border-radius: 15px 50px 30px;
-    background: rgb(134, 180, 248);
-    padding: 30px;
-    width: 400px;
-    height: 675px;
-    margin: auto;
-    box-sizing: border-box;
-    color: whitesmoke;
+    grid-template-rows: 0.1fr 1fr;
+    background-color: #D3D3D3;
 }
 
 .helpBackground {
-    background-color: lightgrey;
+    background-color: #D3D3D3; 
 }
 
-.topictitle1{
-    display: grid;
+#topictitle1 {
     grid-column: 1/2;
     grid-row: 1;
-    
-    padding: 20px;
-    width: 400px;
-    height: auto;
-    margin: auto;
-}
-
-.topictitle2{
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 1;
+    margin: 35px;
     text-align: center;
-    padding: 20px;
+}
+
+#topictitle2 {
+    grid-row: 1;
+    grid-column: 2/3;
+    margin: 35px;
+    text-align: center;   
+}
+
+#topic1p {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#topic2p {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.helpBackground {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+}
+
+#helpTitle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-column: 2/6;
+    grid-row: 1;
+}
+
+#helpPara {
+    border-radius: 15px 50px 30px;
+    background: rgb(134, 180, 248);
+    box-sizing: border-box;
+    color: whitesmoke;
+    padding: 30px;
+    grid-column: 2/4;
+    grid-row: 2;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#helpList {
+    border-radius: 15px 50px 30px;
+    background: rgb(134, 180, 248);
+    box-sizing: border-box;
+    color: whitesmoke;
+    padding: 30px;
+    margin-top: 20px;
+    grid-column: 4/6;
+    grid-row: 2;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 790px) {
+    .mainTopic {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 0.1fr 1fr;
+        background-color: #D3D3D3;
+    }
+    #topic1p {
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+    #topic2p {
+        grid-column: 1/2;
+        grid-row: 4;
+    }
+    #topictitle1 {
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+    #topictitle2 {
+        grid-column: 1/2;
+        grid-row: 3;
+    }
+    figure {
+        grid-column: 1/2;
+    }
+    .helpBackground {
+        display: grid;
+        grid-template-columns: 0.2fr 0.8fr 0.2fr;
+        grid-template-rows: 0.2fr 1fr 1fr;
+    }
+    
+    #helpTitle {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+    
+    #helpPara {
+        grid-column: 2/3;
+        grid-row: 2;
+    }
+    
+    #helpList {
+        margin-top: 20px;
+        grid-column: 2/3;
+        grid-row: 3;
+    }
+}
+
+.topicparagraph {
+    border-radius: 15px 50px 30px;
+    background: rgb(134, 180, 248);
+    padding: 30px;
     width: 400px;
-    height: auto;
+    height: 675px;
     margin: auto;
-}
-
-.column {
-    float: left;
-    width: 40%;
-}
-
-.columnMiddle {
-    float: right;
-    width: 40%;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-    padding: 10px;
-}
-
-.row {
-    background-color: lightgrey;
-}
-
-.textBoxRounded{
-    border-radius: 15px 50px 30px 5px;
-    background: #73AD21;
-    background-image: url("paper.gif")
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    color: whitesmoke;
 }
