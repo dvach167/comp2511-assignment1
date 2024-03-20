@@ -48,14 +48,19 @@ body{
     padding: 2% 0;
 }
 
-.companyLogo {
-    display: flex;
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     align-items: center;
-    text-decoration: none;
+    margin: 0 5%;
 }
 
-.companyLogo img {
-    margin-right: 5px;
+.companyLogo{
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+    text-decoration: none ;
 }
 
 .companyLogo h3{
@@ -63,24 +68,19 @@ body{
     font-weight: bold;
     text-shadow: 0 0 1px gray;
     margin: 0 3px;
-    
 }
 
 .companyLogo h3:hover{
     color: rgba(212, 2, 2, 0.729);
 }
 
-.navigation {
+.navigationBar{
+    grid-column: 2 / 3;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
 }
 
-.navigationBar {
-    margin-left: auto;
-}
-
-.navigationBar a{
+.navigation a{
     font-size: 1.085em;
     color: rgba(0, 18, 184, 0.724);
     text-decoration: none;
@@ -89,8 +89,50 @@ body{
     margin: 0 3px;
 }
 
-.navigationBar a:hover{
+.navigation a:hover{
     color: rgba(212, 2, 2, 0.729);
+}
+
+.navigation a:focus{
+    color: rgba(212, 2, 2, 0.729);
+}
+
+.naviBarPopOut{
+    grid-column: 2 / 3;
+    display: none;
+    justify-content: flex-end;
+}
+
+.dropbtn{
+    background-color: inherit;
+    color: rgba(0, 18, 184, 0.724);
+    font-weight: bold;
+    text-shadow: 0 0 1px gray;
+    font-size: 16px;
+    border: none;
+    margin: 0 10px;
+}
+
+.dropbtn:focus{
+    color: rgba(212, 2, 2, 0.729);
+}
+
+.dropup-content{
+    display: none;
+    position: absolute;
+    background-color: #c5c0c0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 70%;
+    z-index: 1;
+    padding: 1%;
+}
+
+.dropup-content a {
+    color: rgb(0, 52, 121);
+    padding: 2.5% 0;
+    display: block;
+    text-align: left;
 }
 
 .currentLink {
@@ -231,29 +273,26 @@ body{
     
 }
 
-/* For screens with width less than 475px */
-@media  screen and (max-width: 610px){
+/* For screens with width less than 660px */
+@media  screen and (max-width: 660px){
+    /* Header */
     .divCenter{
         width: 100%;
     }
 
     .navigationBar{
-        text-align: left;
+        display: none;
     }
 
-    .navigation{
+    .naviBarPopOut{
+        display: flex;
+    }
+
+    .naviBarPopOut:hover .dropup-content{
         display: block;
     }
 
-    .navigation h3{
-        text-align: center;
-        font-size: 17px;
-    }
-
-    .navigation{
-        margin-bottom: 20px;
-    }
-
+    /* About us page content */
     .container{
         display: inherit;
         align-items: center;
