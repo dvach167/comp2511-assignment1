@@ -50,7 +50,7 @@
 
 #helpPara {
     border-radius: 15px 50px 30px;
-    background: rgb(64, 138, 250);
+    background: #0463F1;
     box-sizing: border-box;
     color: whitesmoke;
     padding: 30px;
@@ -62,7 +62,7 @@
 
 #helpList {
     border-radius: 15px 50px 30px;
-    background: rgb(64, 138, 250);
+    background: #0463F1;
     box-sizing: border-box;
     color: whitesmoke;
     padding: 30px;
@@ -73,6 +73,7 @@
     margin-bottom: 10px;
 }
 
+/* Media Query for Medium devices, for large devices please refer to style.css*/
 @media screen and (max-width: 790px) {
     .mainTopic {
         display: grid;
@@ -126,7 +127,7 @@
 
 .topicparagraph {
     border-radius: 15px 50px 30px;
-    background: rgb(64, 138, 250);
+    background: #0463F1;
     padding: 30px;
     width: 400px;
     height: 675px;
