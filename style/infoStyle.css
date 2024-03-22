@@ -41,6 +41,10 @@
     grid-template-rows: 0.1fr 1fr;
 }
 
+#helpLink:hover {
+    color: rgba(212, 2, 2, 0.729);
+}
+
 #helpTitle {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -72,6 +76,13 @@
     margin-left: 10px;
     margin-bottom: 10px;
 }
+#mruLink:hover{
+    color: rgba(212, 2, 2, 0.729);
+}
+
+#footerContact:hover{
+    color: rgba(212, 2, 2, 0.729);
+}
 
 /* Media Query for Medium devices, for large devices please refer to style.css*/
 @media screen and (max-width: 790px) {
@@ -98,7 +109,8 @@
         grid-row: 3;
     }
     figure {
-        grid-column: 1/2;
+        grid-column: 1/3;
+        grid-row: 2;
     }
     .helpBackground {
         display: grid;
