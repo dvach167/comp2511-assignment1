@@ -265,6 +265,7 @@ body{
 @media  screen and (max-width: 1300px){
     .pageWidth{
         max-width: 90%;
+        margin: auto !important;
     }
 
     .divCenter{
@@ -273,8 +274,8 @@ body{
     
 }
 
-/* For screens with width less than 660px */
-@media  screen and (max-width: 660px){
+/* For screens with width less than 590px */
+@media  screen and (max-width: 590px){
     /* Header */
     .divCenter{
         width: 100%;
