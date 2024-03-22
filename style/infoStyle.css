@@ -50,7 +50,7 @@
 
 #helpPara {
     border-radius: 15px 50px 30px;
-    background: rgb(134, 180, 248);
+    background: rgb(64, 138, 250);
     box-sizing: border-box;
     color: whitesmoke;
     padding: 30px;
@@ -62,7 +62,7 @@
 
 #helpList {
     border-radius: 15px 50px 30px;
-    background: rgb(134, 180, 248);
+    background: rgb(64, 138, 250);
     box-sizing: border-box;
     color: whitesmoke;
     padding: 30px;
@@ -126,7 +126,7 @@
 
 .topicparagraph {
     border-radius: 15px 50px 30px;
-    background: rgb(134, 180, 248);
+    background: rgb(64, 138, 250);
     padding: 30px;
     width: 400px;
     height: 675px;
