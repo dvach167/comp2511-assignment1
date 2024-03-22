@@ -84,6 +84,22 @@
     color: rgba(212, 2, 2, 0.729);
 }
 
+/* skip to main content */
+.skip {
+    position: absolute;
+    top: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
 /* Media Query for Medium devices, for large devices please refer to style.css*/
 @media screen and (max-width: 790px) {
     .mainTopic {
@@ -147,20 +163,4 @@
     margin-bottom: 10px;
     box-sizing: border-box;
     color: whitesmoke;
-}
-
-/* skip to main content */
-.skip {
-    position: absolute;
-    top: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-.skip:focus {
-  position: static;
-  width: auto;
-  height: auto;
 }
