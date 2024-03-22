@@ -135,3 +135,19 @@
     box-sizing: border-box;
     color: whitesmoke;
 }
+
+/* skip to main content */
+.skip {
+    position: absolute;
+    top: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
