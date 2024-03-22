@@ -100,6 +100,18 @@
   height: auto;
 }
 
+.topicparagraph {
+    border-radius: 15px 50px 30px;
+    background: #0463F1;
+    padding: 30px;
+    width: 400px;
+    height: 675px;
+    margin: auto;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+
 /* Media Query for Medium devices, for large devices please refer to style.css*/
 @media screen and (max-width: 790px) {
     .mainTopic {
@@ -151,16 +163,4 @@
         grid-column: 2/3;
         grid-row: 3;
     }
-}
-
-.topicparagraph {
-    border-radius: 15px 50px 30px;
-    background: #0463F1;
-    padding: 30px;
-    width: 400px;
-    height: 675px;
-    margin: auto;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    color: whitesmoke;
 }
