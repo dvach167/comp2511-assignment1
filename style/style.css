@@ -262,7 +262,7 @@ body{
 
 /* Screen compatibility */
 /* For screens with width less than 1300px */
-@media  screen and (max-width: 1300px){
+@media  screen and (max-width: 1028px){
     .pageWidth{
         max-width: 90%;
         margin: auto !important;
@@ -274,8 +274,8 @@ body{
     
 }
 
-/* For screens with width less than 590px */
-@media  screen and (max-width: 590px){
+/* For screens with width less than 790px */
+@media  screen and (max-width: 790px){
     /* Header */
     .divCenter{
         width: 100%;
