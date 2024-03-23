@@ -37,12 +37,6 @@ body{
     text-align: center !important;
 }
 
-.footer {
-    padding: 1.5% 0;
-    background-color: #F1F1F1;
-    text-align: center;
-}
-
 /* Header */
 #mainHeader{
     padding: 2% 0;
@@ -78,6 +72,7 @@ body{
     grid-column: 2 / 3;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .navigation a{
@@ -86,7 +81,7 @@ body{
     text-decoration: none;
     font-weight: bold;
     text-shadow: 0 0 1px gray;
-    margin: 0 3px;
+    margin: 0 8px;
 }
 
 .navigation a:hover{
@@ -184,30 +179,32 @@ body{
 /* About the rooms part*/
 #mainBodyContent{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
 }
+
+
 
 .helpRooms{
     grid-column: 1 / 3;
     grid-row: 1 / 2;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
     background-color: rgb(226, 28, 28);
     color: white;
     box-shadow:inset 0 5px 100px rgba(80, 80, 80, 0.8);
 }
 
-.helpRooms img{
-    grid-column: 1 / 2;
-    margin: 5%;
-    border: 4px solid black;
-    border-radius: 10px;
+.helpContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.helpRooms p{
-    grid-column: 2 / 3;
+.helpContent img{
+    border: 4px solid black;
+    margin: 5%;
+}
+
+.helpContent p{
     margin-left: 7%;
     margin-right: 4%;
     font-size: 1.7em;
@@ -218,46 +215,82 @@ body{
 /* Reviews page content */
 #reviews{
     grid-column: 1 / 3;
-    grid-row: 2 / 3;
+    grid-row: 2 / 2;
+}
+.reviewsDiv{
+    grid-column: 1 / 3;
     background-color: rgb(64, 138, 250);
     color: white;
     box-shadow:inset 0 5px 22px rgba(80, 80, 80, 0.8);
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
-.reviewsDiv{
-    margin: 5% 0 ;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+
+.reviewsContent{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
 }
 
-.reviewsDiv p{
-    grid-column: 1 / 2;
-    margin-left: 7%;
-    margin-right: 4%;
+.reviewsContent p{
+    margin: 5%;
+    font-size: 1.7em;
+    font-weight: bold;
+    text-shadow: 0 0 3px rgb(56, 56, 56);
 }
 
-.reviewsDiv table{
-    grid-column: 2 / 3;
+.reviewsContent .table-container{
+    margin: 5%;
+}
+
+.table-container table{
     border: 4px solid black;
     border-radius: 7px;
 }
 
-.reviewsDiv table tr{
+.table-container table tr{
     border-color: black !important;
 }
 
-.reviewsDiv table tr td{
+.table-container table tr td{
     text-align: center;
     padding: 3px 17px;
     border-collapse: collapse;
 }
 
-.reviewsDiv table tr:nth-child(odd) {
+.table-container table tr:nth-child(odd) {
     background-color: #6a87a4;
 }
-.reviewsDiv table tr:nth-child(even) {
+.table-container table tr:nth-child(even) {
     background-color: rgb(65, 65, 65);
+}
+
+/* Footer */
+.footer {
+    padding: 1.5% 0;
+    background-color: #F1F1F1;
+    text-align: center;
+    box-shadow:inset 0 2px 10px rgba(120, 120, 120, 0.41);
+}
+
+/* skip to main content */
+.skip {
+    position: absolute;
+    top: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
 }
 
 /* Screen compatibility */
@@ -305,20 +338,59 @@ body{
         text-shadow:  2px 0 2px black;
     }
 
+    /* About the rooms part*/
+    .helpRooms{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .helpContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .helpContent img{
+        
+        grid-column: 1/2;
+        margin: 5%;
+    }
+
+    .helpContent p{
+        grid-column: 1/2;
+        margin: 5%;
+        font-size: 1.5em;
+    }
+
+    /* Reviews page content */
+
+    .reviewsDiv{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .reviewsContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reviewsContent p{
+        grid-column: 1 / 2;
+        margin: 5%;
+        font-size: 1.5em;
+        
+    }
+
+    .reviewsContent .table-container{
+        grid-column: 1 / 2;
+        margin: 5% 0;
+    }
+
 }
 
-/* skip to main content */
-.skip {
-    position: absolute;
-    top: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
 
-.skip:focus {
-  position: static;
-  width: auto;
-  height: auto;
-}
